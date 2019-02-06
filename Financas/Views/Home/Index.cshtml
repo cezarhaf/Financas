@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<span id="thisPage" hidden>index</span>
+
+<li>@Html.ActionLink("Home", "Index", "Home")</li>
+<li>@Html.ActionLink("Usuario", "Index", "Usuario")</li>
+<li>@Html.ActionLink("Movimentacoes", "Index", "Movimentacao")</li>
+
+
+<div id="pagIndex" hidden></div>
+<div class="jumbotron">
+    <h1 class="text-center">Saldo Total:</h1><h2 class="text-center" id="saldo"></h2>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <a href='@Url.Action("Index", "Movimentacao")'>
+            <button type='button' class="btn btn-primary btn-lg btn-block">Transacao</button>
+        </a>
+
+
+    </div>
+</div>
+<div class='row'>
+    <div class="col-md-12">
+        <?var url = getScriptUrl();?><a href='<?=url?>?page=extrato'> <button type='button' class="btn btn-primary btn-lg btn-block" name='button' value='my2.html'>Extrato</button> </a>
+    </div>
+</div>
+
+
+
+<ul id="listaTransacoes" class="list-group">
+    <!--
+      <li class="list-group-item btn btn-default mouse-mao" onclick="ulli()"><div class="row">
+         <div class="col-md-1"><span class="glyphicon glyphicon-home"></span></div>
+           <div class="col-md-8">
+             <h4 class="list-group-item-heading">List group item heading</h4>
+           <p class="list-group-item-text">Description</p>
+           </div>
+           <div class="col-md-2"><h4 class="list-group-item-heading">R$ 99,00</h4></div>
+         </div>
+    </li>
+    -->
+</ul>
+
+
+     <?!= HtmlService.createHtmlOutputFromFile('indexJS').getContent(); ?>
+     <?!= HtmlService.createHtmlOutputFromFile('footer').getContent(); ?>
