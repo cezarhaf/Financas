@@ -80,3 +80,7 @@ C:\aspncore_demo\Financas\Financas\bin\WebActivatorEx.dll
 C:\aspncore_demo\Financas\Financas\bin\Ninject.xml
 C:\aspncore_demo\Financas\Financas\bin\Ninject.Web.Common.xml
 C:\aspncore_demo\Financas\Financas\bin\Ninject.Web.Mvc.xml
+C:\aspncore_demo\Financas\Financas\bin\WebMatrix.Data.dll
+C:\aspncore_demo\Financas\Financas\bin\WebMatrix.WebData.dll
+C:\aspncore_demo\Financas\Financas\bin\WebMatrix.WebData.xml
+C:\aspncore_demo\Financas\Financas\bin\WebMatrix.Data.xml
